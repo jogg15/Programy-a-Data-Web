@@ -27,6 +27,30 @@
     --radius-md: 12px;
 }
 
+/* https://www.youtube.com/watch?v=NSxGZ7fC5AA */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-accent) var(--color-surface);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-surface);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-accent);
+    border-radius: 999px;
+    border: 2px solid var(--color-background);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-accent-dark);
+}
+
 body {
     font-family: var(--font-primary);
     color: var(--color-text);
@@ -317,7 +341,7 @@ header::before {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
     align-items: start;
 }
@@ -336,8 +360,9 @@ section {
     padding: 1.5rem;
     background: var(--color-card-bg);
     border-radius: var(--radius-lg);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
+    border: 1px solid rgba(255, 255 , 255, 0.1);
+    margin-bottom: -1.9rem;
+}   
 
 .card-fill {
     width: 100%;

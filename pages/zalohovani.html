@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zálohování</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <div class="logo-text">PROGRAMY A DATA</div>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link">Domů</a>
+                <a href="emulace.html" class="nav-link">Emulace a virtualizace</a>
+                <a href="licence.html" class="nav-link">Licence</a>
+                <a href="os.html" class="nav-link">OS</a>
+                <a href="zalohovani.html" class="nav-link active">Zálohování</a>
+                <a href="appsoftware.html" class="nav-link">Aplikace</a>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="hero-content">
+                <h1 id="main-title">Zálohování dat</h1>
+                <p class="hero-subtitle">Backup aneb vytváření kopií dat pro případ ztráty, poškození nebo potřeby práce s historií.</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <div class="section-header">
+                <h2 class="section-title">Typy a strategie záloh</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text card">
+                    <p>Zálohování může probíhat nepravidelně nebo podle pevného rozvrhu (zejména ve firmách)[cite: 218]. Volba strategie závisí na ceně dat a potřebě rychlosti obnovy[cite: 219, 239].</p>
+                    <p><strong>Inkrementální záloha:</strong> Ukládá pouze soubory změněné od poslední zálohy[cite: 227]. Šetří místo, ale obnova vyžaduje všechny části řetězce[cite: 228].</p>
+                    <p><strong>Rozdílová (diferenciální) záloha:</strong> Zachycuje změny od poslední úplné zálohy[cite: 229]. Obnova je rychlejší – stačí poslední úplná a poslední rozdílová záloha[cite: 230].</p>
+                </div>
+                <div class="about-side card">
+                    <h3>Zásady bezpečnosti</h3>
+                    <ul class="feature-list">
+                        <li><strong>Fyzické oddělení:</strong> Zálohy nesmí být u počítače (riziko požáru/krádeže)[cite: 243].</li>
+                        <li><strong>Kontrola:</strong> Pravidelné ověřování čitelnosti záloh (kontrolní součty)[cite: 240].</li>
+                        <li><strong>Důvěrnost:</strong> Zajištění dat heslem nebo šifrováním[cite: 244].</li>
+                        <li><strong>3-2-1:</strong> 3 kopie na 2 médiích a 1 mimo budovu.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="section-header">
+                <h2 class="section-title">Možnosti zálohování</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text card">
+                    <p><strong>Záloha adresářů:</strong> Prosté kopírování nebo komprimace pomocí archivačních programů (7zip, WinRar)[cite: 247, 248].</p>
+                    <p><strong>Záloha oddílu (Image):</strong> Kopie celého diskového oddílu včetně OS a skrytých částí, která umožňuje plnou obnovu funkčního systému (bootování)[cite: 249, 250].</p>
+                </div>
+                <div class="about-side card">
+                    <h3>Média a nástroje</h3>
+                    <ul class="feature-list">
+                        <li><strong>Média:</strong> Externí disky, NAS, Cloud, optické disky[cite: 245].</li>
+                        <li><strong>Utility v OS:</strong> Např. Obnovení systému ve Windows[cite: 252].</li>
+                        <li><strong>Specializovaný SW:</strong> Clonezilla, Acronis[cite: 251, 252].</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span>Vladimír Studenský · 2026</span>
+    </footer>
+</body>
+</html>

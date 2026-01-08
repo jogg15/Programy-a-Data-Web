@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emulace a virtualizace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <div class="logo-text">PROGRAMY A DATA</div>
+            </button>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link">Domů</a>
+                <a href="emulace.html" class="nav-link active">Emulace a virtualizace</a>
+                <a href="licence.html" class="nav-link">Licence</a>
+                <a href="os.html" class="nav-link">OS</a>
+                <a href="zalohovani.html" class="nav-link">Zálohování</a>
+                <a href="appsoftware.html" class="nav-link">Aplikace</a>
+            </div>
+        </nav>
+
+        <div class="hero">
+            <div class="hero-content">
+                <h1 id="main-title">Emulace a Virtualizace</h1>
+                <p class="hero-subtitle">Jak spouštět software tam, kde původně nefunguje, a jak efektivně využívat hardware pomocí virtuálních strojů.</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <div class="section-header">
+                <h2 class="section-title">Co je to Emulace?</h2>
+                <p class="section-subtitle">Napodobování hardwaru jiného počítače pomocí softwaru.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text card">
+                    <p>Emulace je proces, kdy jeden systém (hostitel) simuluje vlastnosti jiného systému (hosta). Emulátor musí překládat instrukce procesoru, které byly napsány pro jinou architekturu, v reálném čase. Kvůli této vysoké režii je emulace mnohem pomalejší než nativní běh programu.</p>
+                    <p>Díky emulaci můžeme například hrát hry ze starých konzolí (PlayStation, Nintendo) na moderním PC, nebo testovat mobilní aplikace pro Android přímo ve Windows.</p>
+                </div>
+
+                <div class="about-side card">
+                    <h3>Typické použití</h3>
+                    <ul class="feature-list">
+                        <li>Hraní retro her na moderním PC</li>
+                        <li>Vývoj mobilních aplikací</li>
+                        <li>Spouštění 32bitových aplikací na 64bit systémech</li>
+                        <li>Zachování starého softwaru pro historické účely</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="section-header">
+                <h2 class="section-title">Úvod do Virtualizace</h2>
+                <p class="section-subtitle">Vytvoření izolovaného prostředí přímo na reálném hardwaru.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text card">
+                    <p>Virtualizace se liší od emulace tím, že virtualizovaný systém využívá procesor hostitele přímo. O správu se stará tzv. <strong>Hypervizor</strong>, který přiděluje hardwarové zdroje (RAM, diskový prostor, jádra procesoru) jednotlivým virtuálním strojům.</p>
+                    <p>Tato technologie je klíčová pro moderní datacentra a cloudové služby, protože umožňuje na jednom fyzickém serveru provozovat desítky nezávislých operačních systémů najednou.</p>
+                </div>
+
+                <div class="about-side card">
+                    <h3>Výhody virtualizace</h3>
+                    <ul class="feature-list">
+                        <li>Úspora nákladů na hardware</li>
+                        <li>Bezpečné testování virů a softwaru</li>
+                        <li>Snadné zálohování celých systémů (snapshoty)</li>
+                        <li>Maximální využití výkonu procesoru</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span>Vladimír Studenský · 2026</span>
+    </footer>
+</body>
+</html>

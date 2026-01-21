@@ -4,83 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zálohování</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@600;800&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
-    <header>
-        <nav class="top-nav">
-            <div class="logo-text">PROGRAMY A DATA</div>
-            <div class="nav-links">
-                <a href="../index.html" class="nav-link">Domů</a>
-                <a href="emulace.html" class="nav-link">Emulace a virtualizace</a>
-                <a href="licence.html" class="nav-link">Licence</a>
-                <a href="os.html" class="nav-link">OS</a>
-                <a href="zalohovani.html" class="nav-link active">Zálohování</a>
-                <a href="aplikace.html" class="nav-link">Aplikace</a>
+<header>
+    <nav class="top-nav">
+        <div class="logo-text">PROGRAMY A DATA</div>
+
+        <div class="nav-links">
+            <a href="../index.html" class="nav-link">Domů</a>
+            <a href="emulace.html" class="nav-link">Emulace a virtualizace</a>
+            <a href="licence.html" class="nav-link">Licence</a>
+            <a href="os.html" class="nav-link">OS</a>
+            <a href="zalohovani.html" class="nav-link active">Zálohování</a>
+            <a href="aplikace.html" class="nav-link">Aplikace</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1 id="main-title">Zálohování dat</h1>
+            <p class="hero-subtitle">
+                Ukládání kopií dat pro případ ztráty, poškození nebo nechtěné chyby.
+            </p>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="about-section">
+        <div class="section-header">
+            <h2 class="section-title">Typy a strategie záloh</h2>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-text card">
+                <p>
+                    Zálohování může probíhat jednorázově nebo pravidelně podle
+                    pevného plánu, což se využívá hlavně ve firmách.
+                    Volba správné strategie závisí na důležitosti dat
+                    a na tom, jak rychle je potřeba je obnovit.
+                </p>
+
+                <p>
+                    <strong>Inkrementální záloha</strong> ukládá pouze soubory,
+                    které se změnily od poslední zálohy. Výhodou je menší
+                    velikost dat, nevýhodou složitější obnova.
+                </p>
+
+                <p>
+                    <strong>Rozdílová (diferenciální) záloha</strong> ukládá
+                    změny od poslední úplné zálohy. Obnova je jednodušší,
+                    protože stačí poslední úplná a rozdílová záloha.
+                </p>
+
+                <img src="../img/321.png" alt="Pravidlo 3-2-1" class="card-fill">
             </div>
-        </nav>
-        <div class="hero">
-            <div class="hero-content">
-                <h1 id="main-title">Zálohování dat</h1>
-                <p class="hero-subtitle">Vytváření kopií dat pro případ ztráty, poškození nebo pro práci s historií.</p>
+
+            <div class="about-side card">
+                <h3>Zásady bezpečného zálohování</h3>
+                <ul class="feature-list">
+                    <li><strong>Fyzické oddělení:</strong> Zálohy by neměly být uložené na stejném místě jako počítač.</li>
+                    <li><strong>Kontrola:</strong> Pravidelné ověřování, že jsou zálohy čitelné.</li>
+                    <li><strong>Důvěrnost:</strong> Ochrana dat pomocí hesla nebo šifrování.</li>
+                    <li><strong>Pravidlo 3-2-1:</strong> 3 kopie dat, 2 různá média, 1 kopie mimo budovu.</li>
+                </ul>
             </div>
         </div>
-    </header>
+    </section><br><br>
 
-    <main>
-        <section class="about-section">
-            <div class="section-header">
-                <h2 class="section-title">Typy a strategie záloh</h2>
-            </div>
-            <div class="about-grid">
-                <div class="about-text card">
-                    <p>Zálohování může probíhat nepravidelně nebo podle pevného rozvrhu (zejména ve firmách). 
-                        Volba strategie závisí na ceně dat a potřebě rychlosti obnovy.</p>
-                    <p><strong>Inkrementální záloha:</strong> Ukládá pouze soubory změněné od poslední zálohy. 
-                        Šetří místo, ale obnova vyžaduje všechny části řetězce.</p>
-                    <p><strong>Rozdílová (diferenciální) záloha:</strong> Zachycuje změny od poslední úplné zálohy. 
-                        Obnova je rychlejší - stačí poslední úplná a poslední rozdílová záloha.</p>
-                        <img src="../img/321.png" alt="obrazek" class="card-fill">
-                </div>
-                <div class="about-side card">
-                    <h3>Zásady bezpečnosti</h3>
-                    <ul class="feature-list">
-                        <li><strong>Fyzické oddělení:</strong> Zálohy nesmí být u počítače (riziko požáru/krádeže).</li>
-                        <li><strong>Kontrola:</strong> Pravidelné ověřování čitelnosti záloh (kontrolní součty).</li>
-                        <li><strong>Důvěrnost:</strong> Zajištění dat heslem nebo šifrováním.</li>
-                        <li><strong>3-2-1:</strong> 3 kopie na 2 médiích a 1 mimo budovu.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+    <section class="about-section">
+        <div class="section-header">
+            <h2 class="section-title">Možnosti zálohování</h2>
+        </div>
 
-        <section class="about-section">
-            <div class="section-header">
-                <h2 class="section-title">Možnosti zálohování</h2>
-            </div>
-            <div class="about-grid">
-                <div class="about-text card">
-                    <p><strong>Záloha adresářů:</strong> Prosté kopírování nebo komprimace pomocí archivačních programů (7zip, WinRar)</p>
-                    <p><strong>Záloha oddílu (Image):</strong> Kopie celého diskového oddílu včetně OS a skrytých částí, 
-                        která umožňuje plnou obnovu funkčního systému (bootování)</p>
-                        <img src="../img/random.png" alt="obrazek" class="card-fill">
-                </div>
-                <div class="about-side card">
-                    <h3>Média a nástroje</h3>
-                    <ul class="feature-list">
-                        <li><strong>Média:</strong> Externí disky, NAS, Cloud, optické disky.</li>
-                        <li><strong>Utility v OS:</strong> Např. Obnovení systému ve Windows.</li>
-                        <li><strong>Specializovaný SW:</strong> Clonezilla, Acronis.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </main>
+        <div class="about-grid">
+            <div class="about-text card">
+                <p>
+                    <strong>Záloha adresářů</strong> znamená prosté kopírování
+                    nebo archivaci souborů pomocí nástrojů jako 7-Zip nebo WinRAR.
+                </p>
 
-    <footer>
-        <span>Vladimír Studenský · 2026</span>
-    </footer>
+                <p>
+                    <strong>Záloha oddílu (image)</strong> vytváří přesnou kopii
+                    celého disku nebo oddílu včetně operačního systému.
+                    Umožňuje rychlou obnovu plně funkčního systému.
+                </p>
+
+                <img src="../img/random.png" alt="Ukázka zálohování disku" class="card-fill">
+            </div>
+
+            <div class="about-side card">
+                <h3>Média a nástroje</h3>
+                <ul class="feature-list">
+                    <li><strong>Média:</strong> Externí disky, NAS, cloud, optické disky.</li>
+                    <li><strong>Nástroje v OS:</strong> Například Obnovení systému ve Windows.</li>
+                    <li><strong>Specializovaný software:</strong> Clonezilla, Acronis.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <span>Vladimír Studenský · 2026</span>
+</footer>
 </body>
 </html>

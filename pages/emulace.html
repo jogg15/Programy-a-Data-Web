@@ -4,94 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emulace a virtualizace</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@600;800&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="../style.css">
 </head>
-<body>
-    <header>
-        <nav class="top-nav">
-            <div class="logo-text">PROGRAMY A DATA</div>
-            </button>
-            <div class="nav-links">
-                <a href="../index.html" class="nav-link">Domů</a>
-                <a href="emulace.html" class="nav-link active">Emulace a virtualizace</a>
-                <a href="licence.html" class="nav-link">Licence</a>
-                <a href="os.html" class="nav-link">OS</a>
-                <a href="zalohovani.html" class="nav-link">Zálohování</a>
-                <a href="aplikace.html" class="nav-link">Aplikace</a>
-            </div>
-        </nav>
 
-        <div class="hero">
-            <div class="hero-content">
-                <h1 id="main-title">Emulace a Virtualizace</h1>
-                <p class="hero-subtitle">Efektivní využívání hardware skrz virtuální stroje.</p>
+<body>
+<header>
+    <nav class="top-nav">
+        <div class="logo-text">PROGRAMY A DATA</div>
+
+        <div class="nav-links">
+            <a href="../index.html" class="nav-link">Domů</a>
+            <a href="emulace.html" class="nav-link active">Emulace a virtualizace</a>
+            <a href="licence.html" class="nav-link">Licence</a>
+            <a href="os.html" class="nav-link">OS</a>
+            <a href="zalohovani.html" class="nav-link">Zálohování</a>
+            <a href="aplikace.html" class="nav-link">Aplikace</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1 id="main-title">Emulace a virtualizace</h1>
+            <p class="hero-subtitle">
+                Možnosti, jak efektivně využívat hardware pomocí softwaru.
+            </p>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="about-section">
+        <div class="section-header">
+            <h2 class="section-title">Co je to emulace?</h2>
+            <p class="section-subtitle">
+                Napodobování jiného hardwaru pomocí softwaru.
+            </p>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-text card">
+                <p>
+                    Emulace je proces, při kterém jeden systém (hostitel)
+                    napodobuje chování jiného systému (hosta).
+                    Emulátor musí překládat instrukce procesoru určené
+                    pro jinou architekturu, a to v reálném čase.
+                </p>
+
+                <p>
+                    Kvůli této náročnosti je emulace výrazně pomalejší
+                    než běžný nativní běh programu.
+                </p>
+
+                <p>
+                    Využití emulace najdeme například při hraní starších her
+                    ze starých konzolí nebo při testování aplikací
+                    určených pro jiná zařízení.
+                </p>
+
+                <img src="../img/fill.png" alt="Ukázka emulovaného prostředí" class="card-fill">
+            </div>
+
+            <div class="about-side card">
+                <h3>Typické použití emulace</h3>
+                <ul class="feature-list">
+                    <li>Hraní starších (retro) her</li>
+                    <li>Vývoj a testování mobilních aplikací</li>
+                    <li>Spouštění starších aplikací na nových systémech</li>
+                    <li>Zachování historického softwaru</li>
+                </ul>
             </div>
         </div>
-    </header>
+    </section>
 
-    <main>
-        <section class="about-section">
-            <div class="section-header">
-                <h2 class="section-title">Co je to Emulace?</h2>
-                <p class="section-subtitle">Napodobování hardwaru jiného počítače pomocí softwaru.</p>
+    <br><br>
+
+    <section class="about-section">
+        <div class="section-header">
+            <h2 class="section-title">Úvod do virtualizace</h2>
+            <p class="section-subtitle">
+                Oddělené prostředí běžící přímo na fyzickém hardwaru.
+            </p>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-text card">
+                <p>
+                    Virtualizace se od emulace liší tím,
+                    že virtuální systém využívá procesor hostitele přímo.
+                    O rozdělení hardwarových prostředků se stará
+                    takzvaný <strong>hypervizor</strong>.
+                </p>
+
+                <p>
+                    Hypervizor přiděluje jednotlivým virtuálním strojům
+                    paměť RAM, výkon procesoru nebo diskový prostor
+                    podle aktuálních potřeb.
+                </p>
+
+                <p>
+                    Tato technologie se běžně používá v datových centrech
+                    a cloudových službách, kde umožňuje provozovat
+                    více operačních systémů na jednom fyzickém serveru.
+                </p>
+
+                <img src="../img/virtualization.png" alt="Schéma virtualizace" class="card-fill">
             </div>
 
-            <div class="about-grid">
-                <div class="about-text card">
-                    <p>Emulace je proces, kdy jeden systém (hostitel) simuluje vlastnosti jiného systému (hosta). 
-                        Emulátor musí překládat instrukce procesoru, které byly napsány pro jinou architekturu, v reálném čase. 
-                        Kvůli této vysoké režii je emulace mnohem pomalejší než nativní běh programu.</p>
-                    <p>Díky emulaci můžeme například hrát hry ze starých konzolí (PlayStation, Nintendo) na moderním PC, 
-                        nebo testovat mobilní aplikace pro Android přímo ve Windows.</p>
-                    <img src="../img/fill.png" alt="obrazek" class="card-fill">
-                </div>
-
-                <div class="about-side card">
-                    <h3>Typické použití</h3>
-                    <ul class="feature-list">
-                        <li>Hraní retro her na moderním PC</li>
-                        <li>Vývoj mobilních aplikací</li>
-                        <li>Spouštění 32bitových aplikací na 64bit systémech</li>
-                        <li>Zachování starého softwaru pro historické účely</li>
-                    </ul>
-                </div>
+            <div class="about-side card">
+                <h3>Výhody virtualizace</h3>
+                <ul class="feature-list">
+                    <li>Nižší náklady na hardware</li>
+                    <li>Bezpečné testování softwaru</li>
+                    <li>Snadné zálohování celých systémů</li>
+                    <li>Efektivní využití výkonu počítače</li>
+                </ul>
             </div>
-        </section>
-        <br><br>
+        </div>
+    </section>
+</main>
 
-        <section class="about-section">
-            <div class="section-header">
-                <h2 class="section-title">Úvod do Virtualizace</h2>
-                <p class="section-subtitle">Vytvoření izolovaného prostředí přímo na reálném hardwaru.</p>
-            </div>
-
-            <div class="about-grid">
-                <div class="about-text card">
-                    <p>Virtualizace se liší od emulace tím, že virtualizovaný systém využívá procesor hostitele přímo. 
-                        O správu se stará tzv. <strong>Hypervizor</strong>, který přiděluje hardwarové zdroje (RAM, diskový prostor, jádra procesoru) 
-                        jednotlivým virtuálním strojům.</p>
-                    <p>Tato technologie je klíčová pro moderní datacentra a cloudové služby, 
-                        protože umožňuje na jednom fyzickém serveru provozovat desítky nezávislých operačních systémů najednou.</p>
-                    <img src="../img/virtualization.png" alt="obrazek" class="card-fill">
-                </div>
-
-                <div class="about-side card">
-                    <h3>Výhody virtualizace</h3>
-                    <ul class="feature-list">
-                        <li>Úspora nákladů na hardware</li>
-                        <li>Bezpečné testování virů a softwaru</li>
-                        <li>Snadné zálohování celých systémů (snapshoty)</li>
-                        <li>Maximální využití výkonu procesoru</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <span>Vladimír Studenský · 2026</span>
-    </footer>
+<footer>
+    <span>Vladimír Studenský · 2026</span>
+</footer>
 </body>
 </html>
